@@ -1,0 +1,17 @@
+name: Lint Code
+ 
+on:
+  pull_request:
+    paths:
+      - 'src/**'
+ 
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    name: Run ESLint
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+ 
+      - name: Run ESLint Custom Action
+        uses: ./action
