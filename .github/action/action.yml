@@ -1,0 +1,5 @@
+name: "Run ESLint"
+description: "A custom GitHub Action to run ESLint and show annotations"
+runs:
+  using: "docker"
+  image: "Dockerfile"
